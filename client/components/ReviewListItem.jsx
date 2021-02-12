@@ -73,23 +73,23 @@ const ReviewListItem = ({
           tabIndex={0}
           title="thumbBtn"
           onKeyDown={() => {
-            if (!thumbIds.includes(item._id)) {
-              addHelpful(item._id);
+            if (!thumbIds.includes(item.id)) {
+              addHelpful(item.id);
               const newThumbs = JSON.parse(JSON.stringify(thumbIds));
-              newThumbs.push(item._id);
+              newThumbs.push(item.id);
               setThumbIds(newThumbs);
             }
           }}
           onClick={() => {
-            if (!thumbIds.includes(item._id)) {
-              addHelpful(item._id);
+            if (!thumbIds.includes(item.id)) {
+              addHelpful(item.id);
               const newThumbs = JSON.parse(JSON.stringify(thumbIds));
-              newThumbs.push(item._id);
+              newThumbs.push(item.id);
               setThumbIds(newThumbs);
             }
           }}
         >
-          <i className={`${thumbIds.includes(item._id) ? 'fas' : 'far'} fa-thumbs-up`} />
+          <i className={`${thumbIds.includes(item.id) ? 'fas' : 'far'} fa-thumbs-up`} />
           {item.helpful}
         </div>
       </div>
