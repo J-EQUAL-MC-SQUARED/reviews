@@ -5,3 +5,8 @@ coverage
 public/reviews-app.js.br
 public/reviews-app.js.gz
 public/reviews-app.js.LICENSE.txt
+database/data
+database/items.csv
+*.csv
+images
+newrelic.js

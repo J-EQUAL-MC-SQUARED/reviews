@@ -12,7 +12,7 @@ const Gallery = ({
       {gallery.map((review, i) => (
         <div
           className="reviews-gallery-img"
-          key={review._id}
+          key={review.id}
           onClick={() => {
             setIndex(0);
             setPlace(i);
@@ -24,7 +24,7 @@ const Gallery = ({
           role="button"
           tabIndex={0}
         >
-          <img src={review.images[0]} alt="img" />
+          <img src={review.imageurl} alt="img" />
         </div>
       ))}
     </div>

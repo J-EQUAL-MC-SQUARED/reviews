@@ -8,7 +8,7 @@ const ENTRY = path.resolve(__dirname, 'client', 'index');
 const OUT_DIR = path.resolve(__dirname, 'public');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: ENTRY,
 
   output: {

@@ -15,7 +15,7 @@ const ReviewList = ({
     {list.map((item) => (
       <ReviewListItem
         item={item}
-        key={item._id}
+        key={item.id}
         addHelpful={addHelpful}
         setModal={setModal}
         setIndex={setIndex}
